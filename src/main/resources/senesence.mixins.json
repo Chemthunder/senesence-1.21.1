@@ -1,0 +1,15 @@
+{
+	"required": true,
+	"package": "net.kindling.senesence.mixin",
+    "plugin": "net.kindling.senesence.impl.util.SenesenceMixinPlugin",
+	"compatibilityLevel": "JAVA_21",
+	"mixins": [
+		"ExampleMixin"
+	],
+	"injectors": {
+		"defaultRequire": 1
+	},
+	"overwrites": {
+		"requireAnnotations": true
+	}
+}
