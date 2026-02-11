@@ -1,7 +1,6 @@
 {
 	"required": true,
 	"package": "net.kindling.senesence.mixin",
-    "plugin": "net.kindling.senesence.impl.util.SenesenceMixinPlugin",
 	"compatibilityLevel": "JAVA_21",
 	"mixins": [
 		"ExampleMixin"

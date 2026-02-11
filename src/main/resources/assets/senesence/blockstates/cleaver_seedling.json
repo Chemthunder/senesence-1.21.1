@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "seedling=small": {
+      "model": "senesence:block/seedling_small"
+    },
+    "seedling=medium": {
+      "model": "bulwark:block/seedling_medium"
+    },
+    "seedling=grown": {
+      "model": "bulwark:block/seedling_grown"
+    }
+  }
+}

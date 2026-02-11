@@ -30,12 +30,6 @@ repositories {
         url = "https://maven.terraformersmc.com/"
     }
 
-    // Veil
-    maven {
-        name = 'BlameJared Maven (CrT / Bookshelf)'
-        url = 'https://maven.blamejared.com'
-    }
-
     // CCA
     maven {
         name = "Ladysnake Mods"
@@ -57,12 +51,6 @@ dependencies {
 
 	// Fabric API. This is technically optional, but you probably want it anyway.
 	modImplementation "net.fabricmc.fabric-api:fabric-api:${project.fabric_api_version}"
-
-//    // Veil
-//    modImplementation("foundry.veil:veil-fabric-${project.minecraft_version}:${project.veil_version}") {
-//        exclude group: "maven.modrinth"
-//        exclude group: "me.fallenbreath"
-//    }
 
     // Libraries
     modImplementation "maven.modrinth:acornlib:${project.acornlib_version}"

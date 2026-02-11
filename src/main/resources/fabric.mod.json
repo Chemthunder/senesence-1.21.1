@@ -3,9 +3,9 @@
 	"id": "senesence",
 	"version": "${version}",
 	"name": "Senesence",
-	"description": "Viva la revolution!",
+	"description": "Lang lebe die Revolution!",
 	"authors": [
-		"Chemthunder",
+      "Chemthunder",
       "KindlingCinder"
 	],
 	"license": "CC0-1.0",
