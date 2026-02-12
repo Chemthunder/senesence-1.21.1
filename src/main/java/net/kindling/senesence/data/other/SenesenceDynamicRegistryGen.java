@@ -15,6 +15,7 @@ public class SenesenceDynamicRegistryGen extends FabricDynamicRegistryProvider {
 
     protected void configure(RegistryWrapper.WrapperLookup wrapperLookup, Entries entries) {
         entries.addAll(wrapperLookup.getWrapperOrThrow(RegistryKeys.DAMAGE_TYPE));
+        entries.addAll(wrapperLookup.getWrapperOrThrow(RegistryKeys.ENCHANTMENT));
     }
 
     public String getName() {

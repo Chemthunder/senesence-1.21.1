@@ -24,12 +24,9 @@ public class CleaverSeedlingBlock extends Block {
     }
 
     protected void randomTick(BlockState state, ServerWorld world, BlockPos pos, Random random) {
-        if (random.nextInt(3) == 0) {
-            if (state.get(SenesenceProperties.SEEDLING_PROPERTY) == SeedlingProperty.SMALL) {
-                world.getBlockState(pos).with(SEEDLING, SeedlingProperty.MEDIUM);
-            } else if (state.get(SenesenceProperties.SEEDLING_PROPERTY) == SeedlingProperty.MEDIUM) {
-                world.getBlockState(pos).with(SEEDLING, SeedlingProperty.GROWN);
-            }
+        int i = state.get(SenesenceProperties.SEEDLING_PROPERTY).ordinal();
+        if (i < 2){
+            world.getBlockState(pos).with(SEEDLING, SeedlingProperty.values()[i+1]);
         }
         super.randomTick(state, world, pos, random);
     }

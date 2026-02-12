@@ -2,9 +2,7 @@ package net.kindling.senesence.impl;
 
 import net.fabricmc.api.ModInitializer;
 
-import net.kindling.senesence.impl.index.SenesenceBlocks;
-import net.kindling.senesence.impl.index.SenesenceItems;
-import net.kindling.senesence.impl.index.SenesenceParticles;
+import net.kindling.senesence.impl.index.*;
 import net.kindling.senesence.impl.util.SenesenceProperties;
 import net.minecraft.util.Identifier;
 import org.slf4j.Logger;
@@ -21,6 +19,9 @@ public class Senesence implements ModInitializer {
         SenesenceItems.init();
         SenesenceBlocks.init();
         SenesenceParticles.init();
+        SenesenceEnchantmentEffects.init();
+        SenesenceDataComponents.init();
+        SenesenceEntities.init();
 
         SenesenceProperties.init();
 

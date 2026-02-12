@@ -1,11 +1,11 @@
 package net.kindling.senesence.impl.index;
 
+import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroupEntries;
+import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.kindling.senesence.impl.Senesence;
 import net.kindling.senesence.impl.block.item.CleaverSeedlingBlockItem;
 import net.kindling.senesence.impl.item.AuburnCleaverItem;
-import net.minecraft.item.BlockItem;
-import net.minecraft.item.Item;
-import net.minecraft.item.ToolMaterials;
+import net.minecraft.item.*;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 
@@ -18,8 +18,6 @@ public interface SenesenceItems {
 
     Item CLEAVER_SEEDLING_BI = create("cleaver_seedling", CleaverSeedlingBlockItem::new, new Item.Settings().maxCount(16));
 
-
-
     static Item create(String name, Function<Item.Settings, Item> factory, Item.Settings settings) {
         Item item = factory.apply(settings);
         if (item instanceof BlockItem blockItem) {
@@ -30,7 +28,13 @@ public interface SenesenceItems {
     }
 
     static void init() {
-        modifyItemNameColor(AUBURN_CLEAVER, 0xFF5c3735);
+        modifyItemNameColor(AUBURN_CLEAVER, 0xFFdd6544);
         modifyItemNameColor(CLEAVER_SEEDLING_BI, 0xFF5c3735);
+
+        ItemGroupEvents.modifyEntriesEvent(ItemGroups.COMBAT).register(SenesenceItems::woah);
+    }
+
+    private static void woah(FabricItemGroupEntries e) {
+        e.addAfter(Items.CROSSBOW, AUBURN_CLEAVER);
     }
 }

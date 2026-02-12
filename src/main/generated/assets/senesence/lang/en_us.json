@@ -1,4 +1,14 @@
 {
   "block.senesence.cleaver_seedling": "Cleaver Seedling",
+  "death.attack.bury": "%1$s was buried under autumn leaves",
+  "death.attack.bury.item": "%1$s was buried under autumn leaves by %2$s wielding %3$s",
+  "death.attack.bury.player": "%1$s was buried under autumn leaves by %2$s",
+  "death.attack.spreaded": "%1$s was covered in sparks",
+  "death.attack.spreaded.item": "%1$s was covered in spakrs by %2$s wielding %3$s",
+  "death.attack.spreaded.player": "%1$s was covered in sparks by %2$s",
+  "enchantment.senesence.harvest": "Harvest",
+  "enchantment.senesence.harvest.desc": "Allows the Auburn Cleaver to charge up every crit, unleashing [] upon full charge.",
+  "enchantment.senesence.splinter": "Splinter",
+  "enchantment.senesence.splinter.desc": "Allows the wielder to throw a splintered version of the Auburn Cleaver, which will deal damage to all nearby entities upon hitting the ground.",
   "item.senesence.auburn_cleaver": "Auburn Cleaver"
 }

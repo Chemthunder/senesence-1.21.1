@@ -18,7 +18,7 @@ public class SenesenceModelGen extends FabricModelProvider {
     }
 
     public void generateItemModels(ItemModelGenerator generator) {
-        generator.register(AUBURN_CLEAVER, Models.HANDHELD);
+        generator.register(AUBURN_CLEAVER, Models.GENERATED);
         generator.register(CLEAVER_SEEDLING_BI, Models.GENERATED);
     }
 }

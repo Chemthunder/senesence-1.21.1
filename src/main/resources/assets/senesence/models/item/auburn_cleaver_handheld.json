@@ -1,0 +1,6 @@
+{
+  "parent": "senesence:item/cleaver_handheld",
+  "textures": {
+    "layer0": "senesence:item/auburn_cleaver_handheld"
+  }
+}

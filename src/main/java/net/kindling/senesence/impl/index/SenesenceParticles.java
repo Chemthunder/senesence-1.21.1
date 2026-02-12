@@ -13,6 +13,7 @@ import net.minecraft.registry.Registry;
 
 public interface SenesenceParticles {
     SimpleParticleType AUBURN_LEAF = FabricParticleTypes.simple(true);
+    SimpleParticleType SPARK = FabricParticleTypes.simple(true);
 
     private static void create(String name, ParticleType<?> particle) {
         Registry.register(Registries.PARTICLE_TYPE, Senesence.id(name), particle);
@@ -20,9 +21,11 @@ public interface SenesenceParticles {
 
     static void init() {
         create("auburn_leaf", AUBURN_LEAF);
+        create("spark", SPARK);
     }
 
     static void clientInit() {
         ParticleFactoryRegistry.getInstance().register(AUBURN_LEAF, FlameParticle.Factory::new);
+        ParticleFactoryRegistry.getInstance().register(SPARK, EndRodParticle.Factory::new);
     }
 }
