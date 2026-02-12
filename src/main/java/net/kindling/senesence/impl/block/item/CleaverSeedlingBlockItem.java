@@ -11,6 +11,11 @@ public class CleaverSeedlingBlockItem extends BlockItem implements ColorableItem
     public int endColor(ItemStack itemStack) {return 0xFF6f4235;}
     public int backgroundColor(ItemStack itemStack) {return 0xF02d172b;}
 
+ //     public int startColor(ItemStack itemStack) {return SenesenceItemUtils.startColor;}
+ //    public int endColor(ItemStack itemStack) {return SenesenceItemUtils.endColor;}
+ //    public int backgroundColor(ItemStack itemStack) {return SenesenceItemUtils.backgroundColor;}
+
+
     public CleaverSeedlingBlockItem(Settings settings) {
         super(SenesenceBlocks.CLEAVER_SEEDLING, settings);
     }

@@ -40,10 +40,18 @@ import org.jetbrains.annotations.Nullable;
 import java.util.Arrays;
 import java.util.List;
 
+import net.kindling.senesence.impl.util.item.SenesenceItemUtils;
+
 public class AuburnCleaverItem extends AxeItem implements ColorableItem, CustomHitSoundItem, CustomKillSourceItem, CritEffectItem, ModelVaryingItem {
     public int startColor(ItemStack itemStack) {return 0xFF401216;}
     public int endColor(ItemStack itemStack) {return 0xFFdd6544;}
     public int backgroundColor(ItemStack itemStack) {return 0xF0130c0b;}
+
+//     public int startColor(ItemStack itemStack) {return SenesenceItemUtils.startColor;}
+//    public int endColor(ItemStack itemStack) {return SenesenceItemUtils.endColor;}
+//    public int backgroundColor(ItemStack itemStack) {return SenesenceItemUtils.backgroundColor;}
+
+
 
     public AuburnCleaverItem(ToolMaterial toolMaterial, Settings settings) {
         super(toolMaterial, settings
